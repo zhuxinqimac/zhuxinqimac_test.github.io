@@ -1,0 +1,319 @@
+/*iPhone 6s*/
+.hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+.hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+.hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+.hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+    background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_large.jpg");
+    background-size: 1700px 472px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 1700px;
+    height: 472px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_large_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) and (min-height: 1050px) {
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_xlarge.jpg");
+        background-size: 1920px 533px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 1920px;
+        height: 533px;
+    }
+}
+
+@media only screen and (min-width: 1442px) and (min-height: 1050px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-height: 1050px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-height: 1050px) and (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_xlarge_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px), only screen and (max-height: 890px) {
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_medium.jpg");
+        background-size: 1400px 389px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 1400px;
+        height: 389px;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-height: 890px) and (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (orientation: portrait), only screen and (max-height: 890px) and (orientation: portrait) {
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_medium.jpg");
+        background-size: 1400px 389px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 1400px;
+        height: 389px;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (orientation: portrait) and (min-resolution: 1.5dppx), only screen and (max-height: 890px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-height: 890px) and (orientation: portrait) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (orientation: portrait) and (min-resolution: 144dpi), only screen and (max-height: 890px) and (orientation: portrait) and (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_small.jpg");
+        background-size: 540px 150px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 540px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_small_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (orientation: landscape) {
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_small.jpg");
+        background-size: 540px 150px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 540px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 735px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (orientation: landscape) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (orientation: landscape) and (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-iphone_6s .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/iphone_6s_small_2x.jpg")
+    }
+}
+
+/*iPad Pro*/
+.hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.hero-image-inner,
+.hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.homeguides-image-element,
+.hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+.hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+    background-image: url("http://images.apple.com/cn/home/images/heros/ipad_pro_family_large.jpg");
+    background-size: 1600px 661px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 1600px;
+    height: 661px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/ipad_pro_family_large_2x.jpg")
+    }
+}
+
+
+@media only screen and (min-width: 1442px) and (min-height: 1050px) {
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/ipad_pro_family_xlarge.jpg");
+        background-size: 1940px 802px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 1940px;
+        height: 802px;
+    }
+}
+
+@media only screen and (min-width: 1442px) and (min-height: 1050px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-height: 1050px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-height: 1050px) and (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/ipad_pro_family_xlarge_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px), only screen and (max-height: 890px) {
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/ipad_pro_family_medium.jpg");
+        background-size: 1310px 542px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 1310px;
+        height: 542px;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-height: 890px) and (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/ipad_pro_family_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/ipad_pro_family_small.jpg");
+        background-size: 440px 182px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 440px;
+        height: 182px;
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-ipad_pro_family .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/ipad_pro_family_small_2x.jpg")
+    }
+}
+
+/*Watch*/
+.hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.hero-image-inner,
+.hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.homeguides-image-element,
+.hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+.hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+    background-image: url("http://images.apple.com/cn/home/images/heros/apple_watch_trio_large.jpg");
+    background-size: 800px 406px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 800px;
+    height: 406px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/apple_watch_trio_large_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) and (min-height: 1050px) {
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/apple_watch_trio_xlarge.jpg");
+        background-size: 1061px 539px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 1061px;
+        height: 539px;
+    }
+}
+
+@media only screen and (min-width: 1442px) and (min-height: 1050px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-height: 1050px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-height: 1050px) and (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/apple_watch_trio_xlarge_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px), only screen and (max-height: 890px) {
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/apple_watch_trio_medium.jpg");
+        background-size: 671px 341px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 671px;
+        height: 341px;
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-height: 890px) and (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/apple_watch_trio_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/apple_watch_trio_small.jpg");
+        background-size: 263px 134px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 263px;
+        height: 134px;
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a div.homeguides-image-element,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.hero-image-inner,
+    .hero-gallery .hero-gallery-item-hero-apple_watch_trio .hero-image-a .homeguides-image-positioner div.homeguides-image-element {
+        background-image: url("http://images.apple.com/cn/home/images/heros/apple_watch_trio_small_2x.jpg")
+    }
+}

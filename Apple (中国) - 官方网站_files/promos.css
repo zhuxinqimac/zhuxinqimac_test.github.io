@@ -1,0 +1,881 @@
+
+.promo-tile-bts-mac {
+    background-position: center
+}
+
+@media only screen and (max-width: 1441px) {
+    .promo-tile-bts-mac {
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/hp_tiles_iphone_large.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 1441px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (min-resolution: 144dpi) {
+    .promo-tile-bts-mac {
+        background-image: url("http://images.apple.com/cn/home/images/hp_tiles_iphone_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px), only screen and (max-width: 1441px) and (max-height: 890px) {
+    .promo-tile-bts-mac {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/hp_tiles_iphone_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 144dpi) {
+    .promo-tile-bts-mac {
+        background-image: url("http://images.apple.com/cn/home/images/hp_tiles_iphone_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) {
+    .promo-tile-bts-mac {
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/hp_tiles_iphone_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 144dpi) {
+    .promo-tile-bts-mac {
+        background-image: url("http://images.apple.com/cn/home/images/hp_tiles_iphone_small_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) {
+    .promo-tile-bts-mac {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/hp_tiles_iphone_medium.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-resolution: 144dpi) {
+    .promo-tile-bts-mac {
+        background-image: url("http://images.apple.com/cn/home/images/hp_tiles_iphone_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .promo-tile-bts-mac {
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .promo-tile-bts-mac {
+        height: 200px
+    }
+}
+
+html.ie8 .promo-tile-bts-mac {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/cn/home/images/hp_tiles_iphone_medium.jpg");
+    height: 200px;
+    font-size: 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.ie8 .promo-tile-bts-mac {
+        background-image: url("http://images.apple.com/cn/home/images/hp_tiles_iphone_medium_2x.jpg")
+    }
+}
+
+.promo-tile-ipadpro {
+    background-position: center
+}
+
+@media only screen and (max-width: 1441px) {
+    .promo-tile-ipadpro {
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/ipadpro_large.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 1441px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (min-resolution: 144dpi) {
+    .promo-tile-ipadpro {
+        background-image: url("http://images.apple.com/cn/home/images/promos/ipadpro_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px), only screen and (max-width: 1441px) and (max-height: 890px) {
+    .promo-tile-ipadpro {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/ipadpro_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 144dpi) {
+    .promo-tile-ipadpro {
+        background-image: url("http://images.apple.com/cn/home/images/promos/ipadpro_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) {
+    .promo-tile-ipadpro {
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/ipadpro_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 144dpi) {
+    .promo-tile-ipadpro {
+        background-image: url("http://images.apple.com/cn/home/images/promos/ipadpro_small_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) {
+    .promo-tile-ipadpro {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/ipadpro_medium.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-resolution: 144dpi) {
+    .promo-tile-ipadpro {
+        background-image: url("http://images.apple.com/cn/home/images/promos/ipadpro_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .promo-tile-ipadpro {
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .promo-tile-ipadpro {
+        height: 200px
+    }
+}
+
+html.ie8 .promo-tile-ipadpro {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/cn/home/images/promos/ipadpro_medium.jpg");
+    height: 200px;
+    font-size: 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.ie8 .promo-tile-ipadpro {
+        background-image: url("http://images.apple.com/cn/home/images/promos/ipadpro_medium_2x.jpg")
+    }
+}
+
+.promo-tile-iphone-6s {
+    background-position: center
+}
+
+@media only screen and (max-width: 1441px) {
+    .promo-tile-iphone-6s {
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/iphone_6s_large.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 1441px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (min-resolution: 144dpi) {
+    .promo-tile-iphone-6s {
+        background-image: url("http://images.apple.com/cn/home/images/promos/iphone_6s_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px), only screen and (max-width: 1441px) and (max-height: 890px) {
+    .promo-tile-iphone-6s {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/iphone_6s_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 144dpi) {
+    .promo-tile-iphone-6s {
+        background-image: url("http://images.apple.com/cn/home/images/promos/iphone_6s_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) {
+    .promo-tile-iphone-6s {
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/iphone_6s_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 144dpi) {
+    .promo-tile-iphone-6s {
+        background-image: url("http://images.apple.com/cn/home/images/promos/iphone_6s_small_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) {
+    .promo-tile-iphone-6s {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/iphone_6s_medium.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-resolution: 144dpi) {
+    .promo-tile-iphone-6s {
+        background-image: url("http://images.apple.com/cn/home/images/promos/iphone_6s_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .promo-tile-iphone-6s {
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .promo-tile-iphone-6s {
+        height: 200px
+    }
+}
+
+html.ie8 .promo-tile-iphone-6s {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/cn/home/images/promos/iphone_6s_medium.jpg");
+    height: 200px;
+    font-size: 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.ie8 .promo-tile-iphone-6s {
+        background-image: url("http://images.apple.com/cn/home/images/promos/iphone_6s_medium_2x.jpg")
+    }
+}
+
+.promo-tile-watch {
+    background-position: center
+}
+
+@media only screen and (max-width: 1441px) {
+    .promo-tile-watch {
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/watch_large.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 1441px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (min-resolution: 144dpi) {
+    .promo-tile-watch {
+        background-image: url("http://images.apple.com/cn/home/images/promos/watch_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px), only screen and (max-width: 1441px) and (max-height: 890px) {
+    .promo-tile-watch {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/watch_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 144dpi) {
+    .promo-tile-watch {
+        background-image: url("http://images.apple.com/cn/home/images/promos/watch_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) {
+    .promo-tile-watch {
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/watch_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 144dpi) {
+    .promo-tile-watch {
+        background-image: url("http://images.apple.com/cn/home/images/promos/watch_small_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) {
+    .promo-tile-watch {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/watch_medium.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-resolution: 144dpi) {
+    .promo-tile-watch {
+        background-image: url("http://images.apple.com/cn/home/images/promos/watch_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .promo-tile-watch {
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .promo-tile-watch {
+        height: 200px
+    }
+}
+
+html.ie8 .promo-tile-watch {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/cn/home/images/promos/watch_medium.jpg");
+    height: 200px;
+    font-size: 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.ie8 .promo-tile-watch {
+        background-image: url("http://images.apple.com/cn/home/images/promos/watch_medium_2x.jpg")
+    }
+}
+
+.promo-tile-tradeup {
+    background-position: center
+}
+
+@media only screen and (max-width: 1441px) {
+    .promo-tile-tradeup {
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/tradeup_large.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 1441px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (min-resolution: 144dpi) {
+    .promo-tile-tradeup {
+        background-image: url("http://images.apple.com/cn/home/images/promos/tradeup_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px), only screen and (max-width: 1441px) and (max-height: 890px) {
+    .promo-tile-tradeup {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/tradeup_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 144dpi) {
+    .promo-tile-tradeup {
+        background-image: url("http://images.apple.com/cn/home/images/promos/tradeup_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) {
+    .promo-tile-tradeup {
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/tradeup_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 144dpi) {
+    .promo-tile-tradeup {
+        background-image: url("http://images.apple.com/cn/home/images/promos/tradeup_small_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) {
+    .promo-tile-tradeup {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/tradeup_medium.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-resolution: 144dpi) {
+    .promo-tile-tradeup {
+        background-image: url("http://images.apple.com/cn/home/images/promos/tradeup_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .promo-tile-tradeup {
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .promo-tile-tradeup {
+        height: 200px
+    }
+}
+
+html.ie8 .promo-tile-tradeup {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/cn/home/images/promos/tradeup_medium.jpg");
+    height: 200px;
+    font-size: 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.ie8 .promo-tile-tradeup {
+        background-image: url("http://images.apple.com/cn/home/images/promos/tradeup_medium_2x.jpg")
+    }
+}
+
+/*Promo 3*/
+.promo-tile-ios10 {
+    background-position: center
+}
+
+@media only screen and (max-width: 1441px) {
+    .promo-tile-ios10 {
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/ios10_large.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 1441px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (min-resolution: 144dpi) {
+    .promo-tile-ios10 {
+        background-image: url("http://images.apple.com/cn/home/images/promos/ios10_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px), only screen and (max-width: 1441px) and (max-height: 890px) {
+    .promo-tile-ios10 {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/ios10_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 144dpi) {
+    .promo-tile-ios10 {
+        background-image: url("http://images.apple.com/cn/home/images/promos/ios10_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) {
+    .promo-tile-ios10 {
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/ios10_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 144dpi) {
+    .promo-tile-ios10 {
+        background-image: url("http://images.apple.com/cn/home/images/promos/ios10_small_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) {
+    .promo-tile-ios10 {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/ios10_medium.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-resolution: 144dpi) {
+    .promo-tile-ios10 {
+        background-image: url("http://images.apple.com/cn/home/images/promos/ios10_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .promo-tile-ios10 {
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .promo-tile-ios10 {
+        height: 200px
+    }
+}
+
+html.ie8 .promo-tile-ios10 {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/cn/home/images/promos/ios10_medium.jpg");
+    height: 200px;
+    font-size: 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.ie8 .promo-tile-ios10 {
+        background-image: url("http://images.apple.com/cn/home/images/promos/ios10_medium_2x.jpg")
+    }
+}
+
+/*Promo 4*/
+.promo-tile-macos-sierra {
+    background-position: center
+}
+@media only screen and (max-width: 1441px) {
+    .promo-tile-macos-sierra {
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/sierra_large.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 1441px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (min-resolution: 144dpi) {
+    .promo-tile-macos-sierra {
+        background-image: url("http://images.apple.com/cn/home/images/promos/sierra_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px), only screen and (max-width: 1441px) and (max-height: 890px) {
+    .promo-tile-macos-sierra {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/sierra_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 144dpi) {
+    .promo-tile-macos-sierra {
+        background-image: url("http://images.apple.com/cn/home/images/promos/sierra_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) {
+    .promo-tile-macos-sierra {
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/sierra_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 144dpi) {
+    .promo-tile-macos-sierra {
+        background-image: url("http://images.apple.com/cn/home/images/promos/sierra_small_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) {
+    .promo-tile-macos-sierra {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/sierra_medium.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-resolution: 144dpi) {
+    .promo-tile-macos-sierra {
+        background-image: url("http://images.apple.com/cn/home/images/promos/sierra_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .promo-tile-macos-sierra {
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .promo-tile-macos-sierra {
+        height: 200px
+    }
+}
+
+html.ie8 .promo-tile-macos-sierra {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/cn/home/images/promos/sierra_medium.jpg");
+    height: 200px;
+    font-size: 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.ie8 .promo-tile-macos-sierra {
+        background-image: url("http://images.apple.com/cn/home/images/promos/sierra_medium_2x.jpg")
+    }
+}
+
+.promo-tile-public-betas {
+    background-position: center
+}
+
+@media only screen and (max-width: 1441px) {
+    .promo-tile-public-betas {
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_large.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 1441px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (min-resolution: 144dpi) {
+    .promo-tile-public-betas {
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px), only screen and (max-width: 1441px) and (max-height: 890px) {
+    .promo-tile-public-betas {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 144dpi) {
+    .promo-tile-public-betas {
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) {
+    .promo-tile-public-betas {
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 144dpi) {
+    .promo-tile-public-betas {
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_small_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) {
+    .promo-tile-public-betas {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-resolution: 144dpi) {
+    .promo-tile-public-betas {
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .promo-tile-public-betas {
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .promo-tile-public-betas {
+        height: 200px
+    }
+}
+
+html.ie8 .promo-tile-public-betas {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium.jpg");
+    height: 200px;
+    font-size: 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.ie8 .promo-tile-public-betas {
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium_2x.jpg")
+    }
+}
+
+.promo-tile-public-betas {
+    background-position: center
+}
+
+@media only screen and (max-width: 1441px) {
+    .promo-tile-public-betas {
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_large.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 1441px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (min-resolution: 144dpi) {
+    .promo-tile-public-betas {
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px), only screen and (max-width: 1441px) and (max-height: 890px) {
+    .promo-tile-public-betas {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 144dpi) {
+    .promo-tile-public-betas {
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) {
+    .promo-tile-public-betas {
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 144dpi) {
+    .promo-tile-public-betas {
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_small_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) {
+    .promo-tile-public-betas {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-resolution: 144dpi) {
+    .promo-tile-public-betas {
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .promo-tile-public-betas {
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .promo-tile-public-betas {
+        height: 200px
+    }
+}
+
+html.ie8 .promo-tile-public-betas {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium.jpg");
+    height: 200px;
+    font-size: 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.ie8 .promo-tile-public-betas {
+        background-image: url("http://images.apple.com/cn/home/images/promos/public_betas_medium_2x.jpg")
+    }
+}
+
+/*Promo 4*/
+.promo-tile-applepay {
+    background-position: center
+}
+@media only screen and (max-width: 1441px) {
+    .promo-tile-applepay {
+        background-size: 360px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/promo_applepay_large.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 1441px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (min-resolution: 144dpi) {
+    .promo-tile-applepay {
+        background-image: url("http://images.apple.com/cn/home/images/promos/promo_applepay_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px), only screen and (max-width: 1441px) and (max-height: 890px) {
+    .promo-tile-applepay {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/promo_applepay_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-height: 890px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 1068px) and (min-resolution: 144dpi), only screen and (max-width: 1441px) and (max-height: 890px) and (min-resolution: 144dpi) {
+    .promo-tile-applepay {
+        background-image: url("http://images.apple.com/cn/home/images/promos/promo_applepay_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) {
+    .promo-tile-applepay {
+        background-size: 736px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/promo_applepay_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1441px) and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 1441px) and (max-width: 735px) and (min-resolution: 144dpi) {
+    .promo-tile-applepay {
+        background-image: url("http://images.apple.com/cn/home/images/promos/promo_applepay_small_2x.jpg")
+    }
+}
+
+@media only screen and (min-width: 1442px) {
+    .promo-tile-applepay {
+        background-size: 640px 200px;
+        background-repeat: no-repeat;
+        background-image: url("http://images.apple.com/cn/home/images/promos/promo_applepay_medium.jpg");
+        height: 200px
+    }
+}
+
+@media only screen and (min-width: 1442px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1442px) and (min-resolution: 1.5dppx), only screen and (min-width: 1442px) and (min-resolution: 144dpi) {
+    .promo-tile-applepay {
+        background-image: url("http://images.apple.com/cn/home/images/promos/promo_applepay_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .promo-tile-applepay {
+        height: 200px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .promo-tile-applepay {
+        height: 200px
+    }
+}
+
+html.ie8 .promo-tile-applepay {
+    background-size: 640px 200px;
+    background-repeat: no-repeat;
+    background-image: url("http://images.apple.com/cn/home/images/promos/promo_applepay_medium.jpg");
+    height: 200px;
+    font-size: 0
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.ie8 .promo-tile-applepay {
+        background-image: url("http://images.apple.com/cn/home/images/promos/promo_applepay_medium_2x.jpg")
+    }
+}

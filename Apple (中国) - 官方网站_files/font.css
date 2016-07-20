@@ -1,0 +1,172 @@
+/*WEB FONT 2016-03-12*/
+html[lang=zh-CN] .gallery-content-hero-music-movies-books .copy .copy-inner h1,
+html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .product-pro,
+html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .links,
+html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .product-text{
+font-family: 'HanHei SC', 'PingFang SC', 'Helvetica Neue', 'Hel2etica', 'STHeitiSC-Light', 'Arial', sans-serif;
+}
+
+br.show-only-for-xlarge { display: none;}
+@media only screen and (min-width: 1442px) {br.show-only-for-xlarge { display: block}}
+@media only screen and (max-width: 1068px) {br.show-only-for-xlarge { display: none}}
+@media only screen and (max-width: 1024px) {br.show-only-for-xlarge { display: none}}
+
+@media only screen and (max-height: 1048px) and (min-width: 1442px) {
+    html[lang=zh-CN] .hero-gallery  .hero-content .copy-inner .product-text {
+        font-size: 30px; line-height: 1.2; letter-spacing: 1px;font-weight: 300;
+    }
+}
+
+@media only screen and (max-height: 1048px) and (max-width: 1441px) and (min-width: 1069px) {
+    html[lang=zh-CN] .hero-gallery  .hero-content .copy-inner .product-text {
+        font-size: 30px; line-height: 1.2; letter-spacing: 1px;font-weight: 300;
+    }
+}
+
+
+@media only screen and (max-height: 1048px) and (max-width: 1068px) and (min-width: 736px) {
+    html[lang=zh-CN] .hero-gallery  .hero-content .copy-inner .product-text {
+        font-size: 30px; line-height: 1.2; letter-spacing: 1px;font-weight: 300;
+    }
+}
+
+html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .links {font-size: 22px;line-height: 1.33333;font-weight: 300; letter-spacing: normal}
+@media only screen and (max-width: 735px) { html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .links { font-size: 16px; line-height: 1.45; font-weight: 300; letter-spacing: normal}}
+
+
+ html[lang=zh-CN] .hero-gallery .hero-gallery-item-hero-environment .copy-inner h2.product-pro {
+    font-size: 48px;
+}
+
+@media only screen and (min-width: 1442px) {
+   html[lang=zh-CN] .hero-gallery .hero-gallery-item-hero-environment .copy-inner h2.product-pro {
+    font-size: 60px;
+	}
+}
+
+
+@media only screen and (max-width: 1068px) {
+ html[lang=zh-CN] .hero-gallery .hero-gallery-item-hero-environment .copy-inner h2.product-pro {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+   html[lang=zh-CN] .hero-gallery .hero-gallery-item-hero-environment .copy-inner h2.product-pro {
+        font-size: 38px;
+    }
+}
+
+
+
+html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .links {
+    font-size: 22px;
+}
+
+
+@media only screen and (min-width: 1442px) {
+    html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .links {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .links {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+   html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .links {
+        font-size: 18px;
+    }
+}
+
+
+
+html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .product-pro {
+    font-size: 48px;
+    line-height: 1.08333;
+    letter-spacing: 0;
+    font-family: "HanHei SC", "PingHei", "PingFang SC", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+}
+
+@media only screen and (min-width: 1442px) {
+    html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .product-pro {
+        font-size: 60px;
+        line-height: 1.06667;
+        letter-spacing: 0;
+        font-family: "HanHei SC", "PingHei", "PingFang SC", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .product-pro {
+        font-size: 48px;
+        line-height: 1.08333;
+        letter-spacing: 0;
+        font-family: "HanHei SC", "PingHei", "PingFang SC", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    html[lang=zh-CN] .hero-gallery .hero-content .copy-inner .product-pro {
+        font-size: 38px;
+        line-height: 1.15789;
+        letter-spacing: 0;
+        font-family: "HanHei SC", "PingHei", "PingFang SC", "STHeitiSC-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+    }
+}
+
+
+
+
+html[lang=zh-CN] .hero-gallery .hero-gallery-item-hero-muhammad-ali h2 span.dian{margin-left:-0.2em; margin-right:-0.2em;}
+
+.homepage-headline:lang(zh-CN) {
+	font-family: "Myriad Set Pro", 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiTC-Light', 'Arial', sans-serif;
+}
+
+html[lang=zh-CN] .homepage-headline {
+	font-family: "Myriad Set Pro", 'PingFang SC', 'Helvetica Neue', 'Helvetica', 'STHeitiTC-Light', 'Arial', sans-serif;
+    font-size: 64px;
+    line-height: 1.0625;
+    letter-spacing: -.02em
+}
+
+@media only screen and (min-width: 1442px) and (min-height: 1050px) {
+    html[lang=zh-CN] .homepage-headline {
+        font-size: 80px;
+        line-height: 1.15;
+        letter-spacing: -.024em
+    }
+}
+
+@media only screen and (max-width: 1068px), only screen and (max-height: 890px) {
+    html[lang=zh-CN] .homepage-headline {
+        font-size: 52px;
+        line-height: 1.07724;
+        letter-spacing: -.016em
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    html[lang=zh-CN] .homepage-headline {
+        font-size: 40px;
+        line-height: 1.1;
+        letter-spacing: -.008em
+    }
+}
+
+.copy h2 {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+    letter-spacing: -.025em
+}
+
+@media only screen and (max-width: 735px) {
+    .copy h2 {
+        letter-spacing: -.015em
+    }
+}
+
