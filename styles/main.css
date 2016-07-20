@@ -1,0 +1,47 @@
+.darkBG {
+	padding: 10px 15px;
+	background: #999;
+}
+
+.darkerBG {
+	background: #777;
+	color: white;
+}
+
+.darkestBG {
+	background: #333;
+	color: white;
+}
+
+.myPanel {
+	margin: 3%;
+	/*border: 1px solid #FFA8A8;*/
+	border-radius: 5px;
+	box-shadow: 0px 0px 2px gray;
+}
+
+.myPanel .header {
+	background: #FFA8A8;
+	padding: 10px 20px;
+	color: #C70000;
+	border-radius: 5px 5px 0 0;
+}
+
+.myPanel .content {
+	border: 1px solid #FFA8A8;
+	border-radius: 0 0 5px 5px;
+	padding: 10px 20px;
+}
+
+.myPanel .showOnHover {
+	display: none;
+
+}
+
+.myPanel:hover {
+	box-shadow: 0px 0px 5px black;
+}
+
+.myPanel:hover .showOnHover {
+	display: inline;
+}

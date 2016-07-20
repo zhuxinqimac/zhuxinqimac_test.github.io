@@ -1,2 +1,0 @@
-# zhuxinqimac.github.io
-Page
