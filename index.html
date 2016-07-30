@@ -1,102 +1,252 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Bootstrap Layout</title>
-		<link rel="stylesheet" type="text/css" href="styles/main.css">
-		<link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap.min.css">
+<head>
+    <title>Steven Zhu's Home Page</title>
+    <meta name="description" content="Steven Zhu's Home Page 1.0">
+    <meta name="keywords" content="Steven, Steven Zhu, Zhu Xinqi, Xinqi Zhu, Xinqi, 朱鑫祺, Novelty Zhu">
+    <meta name="author" content="Steven Zhu">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" type="text/css" href="styles/bootstrap/css/bootstrap-theme.min.css">
-	</head>
 
-	<body>
-		<header class="navbar-default">
-			<div class="container">
-				<nav class="navigation">
-				  <div class="container-fluid">
-				    <!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				      </button>
-				      <a class="navbar-brand" href="#">Brand</a>
-				    </div>
+    <link rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/myStyles.css">
+</head>
 
-				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <ul class="nav navbar-nav">
-				        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-				        <li><a href="#">Link</a></li>
-				        <li class="dropdown">
-				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-				          <ul class="dropdown-menu">
-				            <li><a href="#">Action</a></li>
-				            <li><a href="#">Another action</a></li>
-				            <li><a href="#">Something else here</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">Separated link</a></li>
-				            <li role="separator" class="divider"></li>
-				            <li><a href="#">One more separated link</a></li>
-				          </ul>
-				        </li>
-				      </ul>
-				    </div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-				</nav>
-			</div>
-		</header>
-	
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-xs-12">
-					<div class="panel panel-success">
-					  <div class="panel-heading">Name</div>
-					  <div class="panel-body">
-					    <a href="#" class="btn btn-success">Steven</a>
-					  </div>
-					</div>
-				</div>
+<body>
 
-				<div class="col-sm-3 col-xs-6">
-					<div class="panel panel-warning">
-					  <div class="panel-heading">Event</div>
-					  <div class="panel-body">
-					    <a href="#" class="btn btn-warning">PPT</a>
-					  </div>
-					</div>
-				</div>
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="./index.html" class="navbar-brand navbar-left">
+            <div> Steven <img src="images/angelscoming_logo.png" alt="logo"> Zhu </div>
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="./art.html"> Art <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="./art_novels.html">Novels</a></li>
+                <li><a href="./art_poems.html">Poems</a></li>
+                <li><a href="./art_paintings.html">Paintings</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="./photo.html">Photo</a>
+            </li>
+            <li>
+              <a href="./project.html">Project</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-				<div class="col-sm-3 col-xs-6">
-					<div class="panel panel-danger">
-					  <div class="panel-heading">States</div>
-					  <div class="panel-body">
-					    <a href="#" class="btn btn-danger">Done!</a>
-					  </div>
-					</div>
-				</div>
-			</div>
-	    </div>
-		
-		<div class="myPanel">
-			<div class="header">my panel</div>
-			<div class="content">
-				<p>
-					What do you want to talk about
-				</p>
-				<div class="showOnHover">
-					<a href="#" class="btn btn-danger">Delete!</a>
-				</div>
-			</div>
-		</div>
+    <div class="container">
+      <div class="carousel slide" id="myCarousel">
 
-	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<!-- Latest compiled and minified JavaScript -->
-        <script src="styles/bootstrap/js/bootstrap.min.js"></script>
+        <ol class="carousel-indicators">
+          <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+          <li data-slide-to="1" data-target="#myCarousel"></li>
+          <li data-slide-to="2" data-target="#myCarousel"></li>
+          <li data-slide-to="3" data-target="#myCarousel"></li>
+        </ol> <!-- carousel-indicator -->
 
-        <script type="text/javascript" src="scripts/main.js"></script>
-	</body>
+        <div class="carousel-inner">
+          <div class="active item" id="slide0">
+            <div class="carousel-caption">
+              <h3>Who am I?</h3>
+              <p>NICE TO MEET YOU.</p>
+            </div>
+          </div>
+          <div class="item" id="slide1">
+            <div class="carousel-caption">
+              <h3>冰石</h3>
+              <p>褪掉稚气的童话世界系列。</p>
+              <p>一团无法安宁的记忆，掺入了程序猿的不自然逻辑。</p>
+            </div>
+          </div>
+          <div class="item" id="slide2">
+            <div class="carousel-caption">
+              <h3>Nervous about course selection?</h3>
+              <p>Try this small program! Maybe it can help you! (SJTU only)</p>
+              <a href="#" class="btn btn-danger btn-lg">Try It</a>
+            </div>
+          </div>
+          <div class="item" id="slide3">
+            <div class="carousel-caption">
+              <h3>My Gallery</h3>
+              <p>Though I am not a student who major in art, I enjoy art works.</p>
+              <p>Just have a glance at these works, and feel free to contact me and give any suggestions!</p>
+           </div>
+          </div>
+        </div> <!-- carousel-inner -->
+
+        <!-- carousel-control -->
+        <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+        <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+        <!-- carousel-control -->
+      </div> <!-- carousel -->
+
+      <hr>
+
+      <div id="welcome">
+          <div class="row">
+            <div class="col-sm-12" id="introduction">
+              <h1>Welcome!</h1>
+              <p class="lead">
+                This is the first website created by Steven/Xinqi Zhu. Nice to meet you!
+              </p>
+              <br>
+              <p class="lead">
+                You can find some works or resources which may interest you on my website. Please feel free to contact me to report bugs, share interesting ideas, give me suggestions, or even just make friends!
+              </p>
+              <br>
+              <p class="lead">I'm looking forward to hearing from you!</p>
+            </div>
+          </div>
+
+              <a href="#" class="btn btn-success btn-lg" id="contact">Contact Me</a>
+      </div>
+
+      <hr>
+      
+      <div id="features">
+        <div class="row" id="featureTitle">
+          <div class="col-12">
+            <h1>Features</h1>
+            <p class="lead">My website consists of four main parts: Art, Blog, Photo, Project. </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 feature">
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <h3 class="panel-title">Art</h3>
+              </div>
+              <img src="images/feature_art.jpg" class="img-circle img-thumbnail">
+              <p>Paintings, novels and poems will be shown here.</p>
+              <a href="#" class="btn btn-success btn-block" target="_blank">Go to Art</a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 feature">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Blog</h3>
+              </div>
+              <img src="images/feature_art.jpg" class="img-circle img-thumbnail">
+              <p>All types of blogs will be shown here(technical, daily life, etc.).</p>
+              <a href="#" class="btn btn-info btn-block" target="_blank">Go to Blog</a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 feature">
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <h3 class="panel-title">Photo</h3>
+              </div>
+              <img src="images/feature_art.jpg" class="img-circle img-thumbnail">
+              <p>Some of my photos or good pictures will be shown here.</p>
+              <a href="#" class="btn btn-warning btn-block" target="_blank">Go to Photo</a>
+            </div>
+          </div>
+
+          <div class="col-sm-3 feature">
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h3 class="panel-title">Project</h3>
+              </div>
+              <img src="images/feature_project.jpg" class="img-circle img-thumbnail">
+              <p>My projects or interesting DIY tools will be shown here.</p>
+              <a href="#" class="btn btn-danger btn-block" target="_blank">Go to Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div id="Shares">
+        <div class="row" id="shareTitle">
+          <div class="col-12">
+            <h1>Shares</h1>
+            <p class="lead">Here are some links/tools I want to share with you. I believe with these resources, your life would be better -).</p>
+            <p class="lead">I will irregularly update this section.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="list-group">
+              <a href="https://coggle.it/" target="_blank" class="list-group-item">
+                <h4>Online Mind Map: Coggle</h4>
+                <p>Coggle is an online tool for creating and sharing mindmaps. It works online in your browser: there's nothing to download or update.</p>
+              </a>
+              <a href="https://coggle.it/" target="_blank" class="list-group-item">
+                <h4>Online Mind Map: Coggle</h4>
+                <p>Coggle is an online tool for creating and sharing mindmaps. It works online in your browser: there's nothing to download or update.</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="list-group">
+              <a href="https://coggle.it/" target="_blank" class="list-group-item">
+                <h4>Online Mind Map: Coggle</h4>
+                <p>Coggle is an online tool for creating and sharing mindmaps. It works online in your browser: there's nothing to download or update.</p>
+              </a>
+              <a href="https://coggle.it/" target="_blank" class="list-group-item">
+                <h4>Online Mind Map: Coggle</h4>
+                <p>Coggle is an online tool for creating and sharing mindmaps. It works online in your browser: there's nothing to download or update.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div> <!-- container -->
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; 2016 Steven Zhu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="styles/jQuery/jquery-1.11.3.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="styles/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="styles/jQuery/jquery-3.1.0.min.js"></script>
+
+    
+    <!-- Custome JS -->
+    <script src="styles/myStyles.js"></script>
+</body>
 </html>

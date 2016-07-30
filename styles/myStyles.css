@@ -1,0 +1,317 @@
+/* Created by Copyright © Steven Zhu 
+   Jul 25 2016 */
+
+/*================= Global =================*/
+.heading {
+    background: #eee;
+}
+
+.heading .content {
+    padding:  60px 30px 30px 30px;
+}
+
+.container {
+    padding: 0px 30px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.panel {
+    border-radius: 0;
+}
+
+.well {
+    border-radius: 0;
+}
+
+.panel-heading {
+    border-radius: 0;
+}
+
+.novel-content {
+    margin: 0 0 100px 0;
+}
+
+.art-contents .list-group h4.right {
+    text-align: right;
+}
+
+.art-contents .list-group a {
+    padding: 0 50px 0px 30px;
+}
+/*================= Navbar =================*/
+.navbar-inverse {
+    font-size: 16px;
+}
+
+.navbar-inverse .navbar-brand {
+    font-size: 24px;
+}
+
+.navbar-inverse .navbar-brand img {
+    height: 20px;
+}
+/*
+.navbar-inverse a {
+    margin: 15px;
+}*/
+
+.navbar-inverse { background-color: #3D3D3D;}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #242424}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #000000}
+.dropdown-menu { background-color: #000000;}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #3D3D3D;}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #000000;}
+.navbar-inverse .navbar-brand { color: #EDEDED;}
+.navbar-inverse .navbar-brand:hover { color: #FFFFFF;}
+.navbar-inverse .navbar-nav>li>a { color: #EDEDED;}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF;}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF;}
+.dropdown-menu>li>a { color: #FFFFFF;}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF;}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #FFFFFF;}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF;}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #FFFFFF;}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF;}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.navbar-inverse .navbar-toggle {
+    color: #3D3D3D;
+}
+
+/*================= ****** =================*/
+/*================= Home Page =================*/
+/*================= ****** =================*/
+
+/*================= Carousel =================*/
+#myCarousel {
+    margin: 40px 0;
+}
+
+.carousel-caption {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.carousel-caption h3 {
+    font-size: 32px;
+}
+
+#myCarousel .item {
+    height: 731px;
+    opacity: 1;
+}
+
+#slide0 {
+    background: url('../images/slide0.jpg') top center no-repeat;
+}
+#slide1 {
+    background: url("../images/slide1.jpg") top center no-repeat;
+}
+#slide2 {
+    background: url("../images/slide2.jpg") top center no-repeat;
+}
+#slide3 {
+    background: url("../images/slide3.jpg") top center no-repeat;
+}
+
+
+/*================= Welcome Div =================*/
+#welcome {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#welcome h1{
+    margin: 30px;
+    font-size: 60px;
+    font-family: arial;
+}
+
+#welcome #introduction p{
+    font-size: 32px;
+    font-style: italic;
+    color: #aaa;
+}
+
+#welcome #contact {
+    margin: 10px;
+}
+
+/*================= Features =================*/
+#features .feature {
+    text-align: center;
+}
+
+#features .feature img {
+    margin: 10px;
+}
+
+#features .feature a {
+    width: 80%;
+    margin: 5% 10%;
+}
+
+/*================= ****** =================*/
+/*================= End Home Page =================*/
+/*================= ****** =================*/
+
+/*================= ****** =================*/
+/*================= Art Page =================*/
+/*================= ****** =================*/
+#art-novels .well .page-header, #art-novels .well .page-header h2 {
+    margin: 0;
+}
+
+/*================= ****** =================*/
+/*================= End Art Page =================*/
+/*================= ****** =================*/
+
+/*================= ****** =================*/
+/*================= Novels Page =================*/
+/*================= ****** =================*/
+p.centerPoint {
+    text-align: center;
+}
+
+/*================= ****** =================*/
+/*================= End Novels Page =================*/
+/*================= ****** =================*/
+
+
+/*================= ****** =================*/
+/*================= Paintings Page =================*/
+/*================= ****** =================*/
+.modal-angelscoming {
+    width: 85%;
+    text-align: center;
+}
+
+.modal-nvshennvwangyanjingdoushihongsexilie {
+    width: 90%;
+    text-align: center;
+}
+
+.modal .modal-body {
+    overflow-y: auto;
+}
+
+/*================= ****** =================*/
+/*================= End Paintings Page =================*/
+/*================= ****** =================*/
+
+/*================= ****** =================*/
+/*================= About Page =================*/
+/*================= ****** =================*/
+
+/*================= Introduction =================*/
+/*================= Location =================*/
+#about-location {
+    margin: 20px 0 50px 0;
+}
+
+/*================= Interests =================*/
+#about-interests {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#about-interests .about-interests-heading {
+    text-align: left;
+}
+
+#about-interests .about-interests-heading .contact{
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+#about-interests img {
+    margin: 20px 0 0 0;
+}
+
+#about-interests .panel p {
+    margin: 20px;
+}
+
+
+/*================= ****** =================*/
+/*================= End About Page =================*/
+/*================= ****** =================*/
+
+/*================= Footer =================*/
+footer {
+    background-color: #3D3D3D;
+    font-size: 11px;
+    padding: 40px;
+}
+
+footer .copyright {
+    text-align: center;
+    color: #EDEDED
+}
+
+
+/*================= Layout =================*/
+@media (max-width: 768px) {
+    
+    #myCarousel .item { height: 500px; }
+    
+    #slide0 {
+        background: url('../images/slide0_small.jpg') top center no-repeat;
+    }
+    #slide1 {
+        background: url("../images/slide1_small.jpg") top center no-repeat;
+    }
+    #slide2 {
+        background: url("../images/slide2_small.jpg") top center no-repeat;
+    }
+    #slide3 {
+        background: url("../images/slide3_small.jpg") top center no-repeat;
+    }
+    
+    .carousel-caption {
+        font-size: 16px;
+    }
+    
+    .carousel-caption h4 {
+        font-size: 22px;
+    }
+
+    #welcome #introduction p{
+    font-size: 24px;
+    font-style: italic;
+    font-family: arial;
+    color: #aaa;
+}
+    
+}
+
+/* Largest */
+@media (min-width: 1200px) {
+
+    #myCarousel .item { height: 731px; }
+    
+    #slide0 {
+        background: url('../images/slide0.jpg') top center no-repeat;
+    }
+    #slide1 {
+        background: url("../images/slide1.jpg") top center no-repeat;
+    }
+    #slide2 {
+        background: url("../images/slide2.jpg") top center no-repeat;
+    }
+    #slide3 {
+        background: url("../images/slide3.jpg") top center no-repeat;
+    }
+
+}
+
