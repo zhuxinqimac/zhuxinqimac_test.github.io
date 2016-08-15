@@ -249,14 +249,29 @@ p.centerPoint {
 
 /*================= Footer =================*/
 footer {
+    text-align: center;
     background-color: #3D3D3D;
     font-size: 11px;
     padding: 40px;
 }
 
+footer img {
+    height: 15px;
+    margin: 10px 0;
+}
+
 footer .copyright {
     text-align: center;
-    color: #EDEDED
+    color: #EDEDED;
+}
+
+footer .socialMedia a {
+    margin: 0 4px;
+}
+
+footer .modal-weChat {
+    width: 40%;
+    text-align: center;
 }
 
 
