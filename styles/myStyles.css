@@ -292,12 +292,12 @@ footer .socialMedia a {
 }
 
 
-footer .modal-weChat {
+.modal-weChat {
     width: 60%;
     text-align: center;
 }
 
-footer .modal-weChat img {
+.modal-weChat img {
     width: 60%;
 }
 
@@ -335,13 +335,13 @@ footer .modal-weChat img {
     color: #aaa;
     }
 
-    footer .modal-weChat {
+    .modal-weChat {
     width: 97%;
     text-align: center;
     }
 
-    footer .modal-weChat img {
-        width: 80%;
+    .modal-weChat img {
+        width: 50%;
     }
     
 }
