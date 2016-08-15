@@ -217,6 +217,15 @@ p.centerPoint {
     text-align: center;
 }
 
+#email-me .email-address {
+    text-align: center;
+    margin: 40px;
+}
+
+#email-me .email-address a {
+    padding: 10px 20px;
+}
+
 /*================= ****** =================*/
 /*================= End Contact Page =================*/
 /*================= ****** =================*/
@@ -283,8 +292,12 @@ footer .socialMedia a {
 
 
 footer .modal-weChat {
-    width: 90%;
+    width: 60%;
     text-align: center;
+}
+
+footer .modal-weChat img {
+    width: 60%;
 }
 
 
@@ -319,7 +332,16 @@ footer .modal-weChat {
     font-style: italic;
     font-family: arial;
     color: #aaa;
-}
+    }
+
+    footer .modal-weChat {
+    width: 97%;
+    text-align: center;
+    }
+
+    footer .modal-weChat img {
+        width: 80%;
+    }
     
 }
 
