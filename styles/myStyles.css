@@ -34,6 +34,10 @@
     margin: 0 0 100px 0;
 }
 
+.list-group .list-group-item {
+    border-radius: 0;
+}
+
 .art-contents .list-group h4.right {
     text-align: right;
 }
