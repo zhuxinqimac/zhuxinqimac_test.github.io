@@ -227,6 +227,14 @@ p.centerPoint {
     text-align: center;
 }
 
+.project .panel a {
+    text-align: center;
+}
+
+#firmwareupdate-content img {
+    margin: 0 5%;
+}
+
 /*================= ****** =================*/
 /*================= End Project Page =================*/
 /*================= ****** =================*/

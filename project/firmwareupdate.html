@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Steven Zhu's Home Page</title>
+    <meta name="description" content="Steven Zhu's Home Page 1.0">
+    <meta name="keywords" content="Steven, Steven Zhu, Zhu Xinqi, Xinqi Zhu, Xinqi, 朱鑫祺, Novelty Zhu">
+    <meta name="author" content="Steven Zhu">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+
+
+    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/myStyles.css">
+</head>
+
+<body>
+
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-brand navbar-left">
+            <div> STE <img src="../images/angelscoming_logo.png" alt="logo"> EN </div>
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="../art.html"> Art <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../art_novels.html">Novels</a></li>
+                <li><a href="../art_poems.html">Poems</a></li>
+                <li><a href="../art_paintings.html">Paintings</a></li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="../blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="../photo.html">Photo</a>
+            </li>
+            <li>
+              <a href="../project.html">Project</a>
+            </li>
+            <li>
+              <a href="../contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="firmwareupdate-introduction" class="heading">
+      <div class="container content">
+        <h2>TI Board Firmware Update Using Android Phone Through Bluetooth <small>by Steven Zhu</small></h2>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div id="firmwareupdate-content" class="project-content">
+        <p class="lead">
+            This is a simple project that can flash firmware into a TI Board(tested on TM4C1294XL) wirelessly through Bluetooth using an Android smart phone (tested with Samsung Galaxy Note3).
+        </p>
+        <img src="../images/firmwareupdate1.jpg" alt="firmpare update 1">
+        <p class="lead">
+            It also provide you with some basic ideas of how to interact with board through Bluetooth using your phone.
+        </p>
+        <p class="lead">
+            Please be aware that this project is just a basic usable demo instead of a complete and sophisticated system. I guess it can give you a basic inspiration to achieve your goal.
+        </p>
+
+        <hr>
+        <h3>Board</h3>
+        <p class="lead">
+            Wireless firmware update is not just a simple task that can be achieved by just using a phone. The programs on the board are also very important.
+        </p>
+        <p class="lead">
+            My implementation follows the official instruction. You can download the <i> EK-TM4C1294XL Firmware Development Package USER’S GUIDE </i> <a href="../resources/SW-EK-TM4C1294XL-UG-2.1.2.111.pdf" target="_blank">here</a>.
+        </p>
+        <p class="lead">
+            In the section 2.3 2.4 2.5, it illustrates clearly how the firmware binary file can be flashed into the board's rom through serial port, which makes it possible to flash the firmware through a Bluetooth module.
+        </p>
+        <p class="lead">
+            Instead of using the given two demos, I programmed myself three other more interesting demos to flash, which are interactive.
+        </p>
+        <p class="lead">
+            The boot_serial (illustrated in User Guide section 2.5) should be added to every firmware you want to flash, because this makes it possible for the board to receive the binary file to flash into rom.
+        </p>
+        <p class="lead">
+            You can download these official programs and my demos <a href="#">here</a>, or the official package <a href="http://www.ti.com/tool/sw-tm4c">here</a>.
+        </p>
+        <div class="well">
+            <p class="lead">
+                P.S. You need to use official flash tool(download <a href="http://www.ti.com/tool/lmflashprogrammer">here</a>) to flash boot_serial.bin from 0x0000 address first and flash one of the demos from the address of 0x4000 through USB on Windows before the first time you try flashing wirelessly on Android. If the any of the implementations failed, you can use this flash tool to bring the board back to normal.
+            </p>
+        </div>
+
+
+        <hr>
+        <h3>Android App</h3>
+        <p class="lead">
+            Before you install the app, you need to change app's source code to match your Bluetooth module's mac address on your TI board(I am sorry to say this is a really bad thing I made in my app, because I didn't use search function to connect to a Bluetooth module. I would be very grateful if you can use search function in your own app to connect a Bluetooth module.). Then generate your own version app.
+        </p>
+        <p class="lead">
+            Besides, you also need to put your demo binary files into your device's internal storage root folder.
+        </p>
+        <p class="lead">
+            Then you can connect, and begin to flash.
+        </p>
+        <p class="lead">
+            When the board contains an official demo, you need to press SW1 until LED2 is turned off, then start your burning. When the board contains one of my customized demos, you need to press SW1 and the four LEDs will all turn on, then start your burning.
+        </p>
+        <img src="../images/firmwareupdate2.jpg" alt="firmpare update 2">
+        <p class="lead">You can switch to <i>Talk to Device</i> page to interact with the board.</p>
+        <p class="lead">My three customized demos have different functions.</p>
+        <div class="well">
+            <p class="lead">
+                LEDfollow.bin : you can press B1, B2, B3, or B4 button to turn the four LEDs on board on or off.
+            </p>
+            <p class="lead">
+                LEDbreath.bin : you can press up and down to add or reduce the breathing LED frequecy; you can also press left or right to change the fluid direction.
+            </p>
+            <p class="lead">
+                CalculatorDEMO.bin : you can input an expression ending up with a '#' in the text box to let the board calculate for you, and it will return the result to the receive part of this page(for instance, you can input (1+2+3)*4-5/2#) and the board would return (1+2+3)*4-5/2=22 for you).
+            </p>
+        </div>
+      </div>
+    </div> <!-- container -->
+
+    <hr>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; 2016 Steven Zhu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../styles/jQuery/jquery-1.11.3.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../styles/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="../styles/jQuery/jquery-3.1.0.min.js"></script>
+
+    
+    <!-- Custome JS -->
+    <script src="../styles/myStyles.js"></script>
+</body>
+</html>
