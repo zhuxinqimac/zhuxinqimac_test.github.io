@@ -45,6 +45,10 @@
 .art-contents .list-group a {
     padding: 0 50px 0px 30px;
 }
+
+.modal .modal-body {
+    overflow-y: auto;
+}
 /*================= Navbar =================*/
 .navbar-inverse {
     font-size: 16px;
@@ -160,12 +164,13 @@
 }
 
 #features .feature img {
-    margin: 10px;
+    width: 60%;
+    margin: 10%;
 }
 
 #features .feature a {
     width: 80%;
-    margin: 5% 10%;
+    margin: 5%;
 }
 
 /*================= ****** =================*/
@@ -198,6 +203,10 @@ p.centerPoint {
 /*================= ****** =================*/
 /*================= Paintings Page =================*/
 /*================= ****** =================*/
+.photo img {
+    margin: 10px;
+}
+
 .modal-angelscoming {
     width: 85%;
     text-align: center;
@@ -208,12 +217,24 @@ p.centerPoint {
     text-align: center;
 }
 
-.modal .modal-body {
-    overflow-y: auto;
+/*================= ****** =================*/
+/*================= End Paintings Page =================*/
+/*================= ****** =================*/
+
+/*================= ****** =================*/
+/*================= Photo Page =================*/
+/*================= ****** =================*/
+.photo .modal {
+    text-align: center;
+}
+
+
+.modal-photo {
+    width: 80%;
 }
 
 /*================= ****** =================*/
-/*================= End Paintings Page =================*/
+/*================= End Photo Page =================*/
 /*================= ****** =================*/
 
 /*================= ****** =================*/
