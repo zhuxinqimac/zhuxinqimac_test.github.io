@@ -15,6 +15,23 @@
 </head>
 
 <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1662746427385192',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
       <div class="container">
@@ -147,6 +164,17 @@
         <p class="lead"><i>EK-TM4C1294XL Firmware Development Package USER’S GUIDE</i> <a href="../resources/SW-EK-TM4C1294XL-UG-2.1.2.111.pdf" target="_blank">download</a> (which would also be contained in the official package).</p>
 
       </div>
+
+      <hr>
+
+      <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+      
+      <div class="fb-comments" data-href="https://zhuxinqimac.github.io/project/firmwareupdate.html" data-width="100%" data-numposts="5"></div>
     </div> <!-- container -->
 
     <hr>

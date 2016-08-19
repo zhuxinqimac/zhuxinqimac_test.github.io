@@ -15,6 +15,23 @@
 </head>
 
 <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1662746427385192',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
 
     <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
       <div class="container">
@@ -303,6 +320,17 @@
 </p><p class="">逆风者知道了复仇者的计划，将天使扑克带到了地狱，借了他的面具。到二楼和戴着眯眯眼面具、拿着镰刀的服务生对决。最后将服务生杀死。
 </p><p class="">复仇者、钢琴师离开了。</p>
       </div>
+
+      <hr>
+
+      <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+      
+      <div class="fb-comments" data-href="https://zhuxinqimac.github.io/novels/mianjuwuhui.html" data-width="100%" data-numposts="5"></div>
 
     </div> <!-- container -->
 

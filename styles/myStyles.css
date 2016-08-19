@@ -246,6 +246,7 @@ p.centerPoint {
 
 .project .panel img {
     text-align: center;
+    margin: 2% 0;
 }
 
 .project .panel a {
