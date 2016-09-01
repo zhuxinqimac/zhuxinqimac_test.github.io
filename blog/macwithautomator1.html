@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Steven Zhu's Home Page</title>
+    <meta name="description" content="Steven Zhu's Home Page 1.0">
+    <meta name="keywords" content="Steven, Steven Zhu, Zhu Xinqi, Xinqi Zhu, Xinqi, 朱鑫祺, Novelty Zhu">
+    <meta name="author" content="Steven Zhu">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="../images/angelscoming_logo_icon.png">
+    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/myStyles.css">
+</head>
+
+<body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1662746427385192',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-brand navbar-left">
+            <div> STE <img src="../images/angelscoming_logo.png" alt="logo"> EN </div>
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="../art.html"> Art <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../art_novels.html">Novels</a></li>
+                <li><a href="../art_poems.html">Poems</a></li>
+                <li><a href="../art_paintings.html">Paintings</a></li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="../blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="../photo.html">Photo</a>
+            </li>
+            <li>
+              <a href="../project.html">Project</a>
+            </li>
+            <li>
+              <a href="../contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="macwithautomator-introduction" class="heading">
+      <div class="container content">
+        <h1>Mac with Automator : Part 1 <small>by Steven Zhu</small></h1>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div id="macwithautomator-content" class="blog-content">
+        <p class="lead">Have you ever complaint that you cannot copy and paste the directory path when using macOS? Have you ever opened your complex photoshop but only to give a filter to your image? I guess so many times that you camplaint about repeating simple tasks but lots of time being cost.</p>
+        <p class="lead">However Automator is used to solve this problem.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/nopathcopyinmac.jpg" alt="No Path Copy in Mac" class="img-thumbnail">
+                    <figcaption>Cannot Copy Path in Finder</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">I'm gonna use several simple samples to show you how helpful Automator can be on macOS. However in this article I'll cover only one example (the other two can be found in next blog).</p>
+        <br><br>
+
+        <h2>Introduction</h2>
+        <hr>
+        <p class="lead">
+            Automator is an application developed by Apple Inc. for macOS that implements point-and-click (or drag and drop) creation of workflows for automating repetitive tasks into batches for quicker alteration, thus saving time and effort over human intervention to manually change each file separately.
+        </p>
+        <div class="well">
+            <p class="lead">For more infomation, please head to <a href="https://en.wikipedia.org/wiki/List_of_OS_X_components#Automator" target="_blank">https://en.wikipedia.org/wiki/List_of_OS_X_components#Automator</a>.</p>
+        </div>
+        <br><br>
+
+        <h2>Sample</h2>
+        <hr>
+        <p class="lead">
+            I'll use three small samples to illustrate how Automator works(in this article I'll cover only one, the other two will be in next blog). If you use Windows, I guess this software <a href="https://www.jitbit.com/macro-recorder/automator-for-windows/" target="_blank">Jitbit Macro Recorder</a> may help you, but I haven't tried it myself.
+        </p>
+        <p class="lead">
+            The three samples show: Copy and reveal the path of a folder/file in Finder, Save and clean the Desktop, and Add a filter to an image.
+        </p>
+        <br>
+
+        <h3 class="subtitle"><span class="glyphicon glyphicon-zoom-in"></span> Copy and reveal the path of a folder/file in Finder</h3>
+        <hr>
+        <p class="lead">
+            Open Automator: you can open it in Launchpad. Just type the name in your search bar to get it (or you can navigate it in <i>Other</i> folder).
+        </p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/automatorinlaunchpad.jpg" alt="Automator in Launchpad" class="img-thumbnail">
+                    <figcaption>Automator in Launchpad</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Choose File->New. Here you need to choose a type of document to make. This is a decision of how your workflow would run. Here we choose service.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/choosefilenew.jpg" alt="Choose File->New" class="img-thumbnail">
+                    <figcaption>Choose File->New</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/chooseservice.jpg" alt="Choose Service" class="img-thumbnail">
+                    <figcaption>Choose Service</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Select <i>files or folders</i> in <i>Finder.app</i> because we want to get the path in Finder.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/choosefilesorfoldersinfinder.jpg" alt="Choose files or folders in Finder.app" class="img-thumbnail">
+                    <figcaption>Choose files or folders in Finder.app</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Then focus on the Search Bar on your left hand and type "copy".</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/typecopytosearch.jpg" alt="Type copy to Search" class="img-thumbnail">
+                    <figcaption>Type copy to Search</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Then select and drag the <i>Copy to Clipboard</i> to the work area(right big area).</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/dragcopytoclipboard.jpg" alt="Drag Copy to Clipboard to Right" class="img-thumbnail">
+                    <figcaption>Drag Copy to Clipboard to Right</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Click File->Save to save it(I named it as <i>Copy Path</i>) and this simple service has been completed.</p>
+        <p class="lead">Let's set up <i>Reveal Finder Items</i> before we test it.</p>
+        <p class="lead">Create a new service and select <i>text</i> in <i>any application</i> use the same method mentioned before and you will get an empty workflow.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/newaservice.jpg" alt="New a Service" class="img-thumbnail">
+                    <figcaption>New a Service</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Type <i>Reveal</i> in the Search Bar, and Drag the <i>Reveal Finder Items</i> to the right big area.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/dragrevealfinderitems.jpg" alt="Drag Reveal Finder Items" class="img-thumbnail">
+                    <figcaption>Drag Reveal Finder Items</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Save it(I saved as <i>Reveal Items</i>) and this service has been completed.</p>
+        <p class="lead">Then let's test these two functions. Open finder and select a file/folder as I do.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/testcopypath1.jpg" alt="Test Copy Path 1" class="img-thumbnail">
+                    <figcaption>Test Copy Path 1</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Then right click on it and choose <i>Service->Copy Path</i>. Then this file/folder's path has already been copied to your clipboard.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/testcopypath2.jpg" alt="Test Copy Path 2" class="img-thumbnail">
+                    <figcaption>Test Copy Path 2</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Now you can paste it anywhere.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/testcopypath3.jpg" alt="Test Copy Path 3" class="img-thumbnail">
+                    <figcaption>Test Copy Path 3</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Let's test the <i>Reveal Items</i> function now.</p>
+        <p class="lead">Highlight a path.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/testrevealpath1.jpg" alt="Test Reveal Path 1" class="img-thumbnail">
+                    <figcaption>Test Reveal Path 1</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Right click on it, and choose <i>Service->Reveal in Finder</i>.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/testrevealpath2.jpg" alt="Test Reveal Path 2" class="img-thumbnail">
+                    <figcaption>Test Reveal Path 2</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Then the item in your Finder will show up.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/testrevealpath3.jpg" alt="Test Reveal Path 3" class="img-thumbnail">
+                    <figcaption>Test Reveal Path 3</figcaption>
+                </figure>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h2>Finally</h2>
+        <hr>
+        <p class="lead">The other two examples will show up in the next blog. If you are interested in Automator, try it yourself!</p>
+        <p class="lead">There is no requirement to programming experience, but it will save you a lot of time.</p>
+        <p class="lead">Anyway, it's cool right?</p>
+        <br><br>
+
+
+        <hr>
+        <div class="well">
+            <p class="lead">P.S. Wish Automator makes your life better.</p>
+        </div>
+        <p class="lead">(Please use this link to share: <a href="http://zhuxinqi.space/blog/macwithautomator1.html">http://zhuxinqi.space/blog/macwithautomator1.html</a>)</p>
+        <p class="lead">(转载请注明出处)</p>
+      </div>
+
+      <hr>
+
+      <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+      
+      <div class="fb-comments" data-href="https://zhuxinqimac.github.io/blog/macwithautomator.html" data-width="100%" data-numposts="5"></div>
+      
+
+    </div> <!-- container -->
+    
+    <hr>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; 2016 Steven Zhu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../styles/jQuery/jquery-1.11.3.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../styles/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="../styles/jQuery/jquery-3.1.0.min.js"></script>
+
+    
+    <!-- Custome JS -->
+    <script src="../styles/myStyles.js"></script>
+</body>
+</html>
