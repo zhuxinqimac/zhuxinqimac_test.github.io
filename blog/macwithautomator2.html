@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Steven Zhu's Home Page</title>
+    <meta name="description" content="Steven Zhu's Home Page 1.0">
+    <meta name="keywords" content="Steven, Steven Zhu, Zhu Xinqi, Xinqi Zhu, Xinqi, 朱鑫祺, Novelty Zhu">
+    <meta name="author" content="Steven Zhu">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="../images/angelscoming_logo_icon.png">
+    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/myStyles.css">
+</head>
+
+<body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1662746427385192',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-brand navbar-left">
+            <div> STE <img src="../images/angelscoming_logo.png" alt="logo"> EN </div>
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="../art.html"> Art <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../art_novels.html">Novels</a></li>
+                <li><a href="../art_poems.html">Poems</a></li>
+                <li><a href="../art_paintings.html">Paintings</a></li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="../blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="../photo.html">Photo</a>
+            </li>
+            <li>
+              <a href="../project.html">Project</a>
+            </li>
+            <li>
+              <a href="../contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="macwithautomator2-introduction" class="heading">
+      <div class="container content">
+        <h1>Mac with Automator : Part 2 <small>by Steven Zhu</small></h1>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div id="macwithautomator2-content" class="blog-content">
+        <p class="lead">In the last blog I introduced a small example to show how Automator work. In this blog I'm gonna give another example to illustrate it more deeply.</p>
+        <p class="lead">This example is: Save and Clean the Desktop.</p>
+        <br><br>
+
+        <h3 class="subtitle"><span class="glyphicon glyphicon-zoom-in"></span> Save and Clean the Desktop</h3>
+        <hr>
+        <p class="lead">Most of the Mac users prefer to own an empty elegant Desktop.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/cleandesktop.jpg" alt="A Clean Desktop" class="img-thumbnail">
+                    <figcaption>A Clean Desktop</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">However sometimes it is unavoidable to put some temporary files on your Desktop, such as when illustrating an example to your colleague, or some important files that you do not want to forget, or even some screen shot. And in some cases, we are not sure if those files can be deleted because we may use the files again in the near future.</p>
+        <p class="lead">So absolutely we need a mechanism to help us save the files and clean the Desktop automatically.</p>
+        <p class="lead">Before we start, I'll briefly introduce you how this machanism do. I'll build it as a service that you can use this service in any application. Once you click on this service, the Desktop will be cleaned and the files will be saved in a folder named after the current time. This folder would be saved in the location:  <i>Documents/History_Desktops/</i>.</p>
+        <p class="lead">So let's begin.</p>
+        <p class="lead">
+            Open Automator.
+        </p>
+        <p class="lead">Choose File->New. Choose service.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/choosefilenew.jpg" alt="Choose File->New" class="img-thumbnail">
+                    <figcaption>Choose File->New</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/chooseservice.jpg" alt="Choose Service" class="img-thumbnail">
+                    <figcaption>Choose Service</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">This time we select <i>no input</i> in <i>any application</i> because we want to clean the Desktop whenever we want.</p>
+        <p class="lead">Then search <i>New Folder</i> and drag the <i>New Folder</i> to the right.</p>
+        <p class="lead">After that we need to generate a folder name automatically based on the current time. Click on the <i>Variables</i> and search <i>today</i>.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/searchtoday.jpg" alt="Search Today" class="img-thumbnail">
+                    <figcaption>Search Today</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Then drag the <i>Today's date</i> to the <i>Name</i> blank field in the <i>New Folder</i> action on the right.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/dragdatetoname.jpg" alt="Drag Today's date" class="img-thumbnail">
+                    <figcaption>Drag Today's date</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Use the same method to search and drag <i>Current Time</i> variable to the blank field after <i>Today's date</i>. Then right click the two elements to edit the format as <i>Custom format...</i>(if you do not choose <i>Custom format...</i>, this workflow may not work properly).</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/generatedfoldername.jpg" alt="Generated Folder Name" class="img-thumbnail">
+                    <figcaption>Generated Folder Name</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/choosecustomformat.jpg" alt="Choose Custom Format" class="img-thumbnail">
+                    <figcaption>Choose Custom Format</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Because we want this generated folder to be put into the path: <i>Documents/History_Desktops</i>, we need to new a folder called <i>History_Desktops</i> in <i>Documents</i> manually. So head to your <i>Documents</i> folder and new a folder called <i>History_Desktops</i> there.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/newahistorydesktopsfolder.jpg" alt="New a History_Desktops Folder" class="img-thumbnail">
+                    <figcaption>Make sure there is a <i>History_Desktops</i> folder in your <i>Documents</i> folder</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">After that, back to your Automator and select this created folder in <i>where</i> field(you should choose <i>other</i> to locate your <i>History_Desktops</i> folder).</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/chooseother.jpg" alt="Choose Other" class="img-thumbnail">
+                    <figcaption>Choose Other</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/choosehistorydesktops.jpg" alt="Choose History_Desktops" class="img-thumbnail">
+                    <figcaption>Choose History_Desktops</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Then you will get one like this.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/newfoldercomplete.jpg" alt="New Folder Complete" class="img-thumbnail">
+                    <figcaption>New Folder Complete</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Then click <i>Actions</i> on the left and search <i>set value</i>, and drag the <i>Set Value of Variable</i> to the right. In the Drop-down menu of <i>Variable</i> in <i>Set Value of Variable</i>, choose <i>New variable...</i> and name it as <i>Destination</i>. Then you have set up your saving location.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/setvariabledestination.jpg" alt="Set Variable" class="img-thumbnail">
+                    <figcaption>Set Variable</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">It is time to wrap all files on the Desktop and move them into this destination.</p>
+        <p class="lead">Search <i>get value</i> and drag <i>Get Value of Variable</i> to the right. But you need to right click on this action to select <i>Ignore Input</i> because getting content in Desktop has no relationship with the last step.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/ignoreinput.jpg" alt="Ignore Input" class="img-thumbnail">
+                    <figcaption>Ignore Input</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Click on <i>Variables</i> on the left and search <i>path</i>, then drag the variable <i>Path</i> into the Drop-down menu in the action <i>Get Value of Variable</i>.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/dragpath.jpg" alt="Drag Path" class="img-thumbnail">
+                    <figcaption>Drag Path</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Click on the second button at the bottom main area, you will get variable panel(shown in image1). Then double click on the <i>Path</i> variable and change it to <i>Desktop</i>, remenber to use the Drop-down menu to select Desktop too(shown in image2).</p>
+        <p class="lead">Highlight a path.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/changevariable1.jpg" alt="Change Variable 1" class="img-thumbnail">
+                    <figcaption>Change Variable 1</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/changevariable2.jpg" alt="Change Variable 2" class="img-thumbnail">
+                    <figcaption>Change Variable 2</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Then select <i>Action</i> on the left and search <i>get folder contents</i>. Drag <i>Get Folder Contents</i> to the right and put it after <i>Get Value of Variable</i>.</p>
+        <p class="lead">After that, search <i>move finder items</i>, and drag the <i>Move Finder Items</i> to the right. Drag the destination variable to the Drop-down menu in <i>Move Finder Items</i> action.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/dragdestination.jpg" alt="Drag Destination" class="img-thumbnail">
+                    <figcaption>Drag Destination</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Save it(I saved it as <i>Save and Clean up Desktop</i>).</p>
+        <p class="lead">Now let's test it.</p>
+        <p class="lead">In any application, you just need to click on the App name on the top bar and choose <i>Services->Save and Clean up Desktop</i>.</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/testcleandesktop1.jpg" alt="Test Clean Desktop 1" class="img-thumbnail">
+                    <figcaption>Test Clean Desktop 1</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/testcleandesktop2.jpg" alt="Test Clean Desktop 2" class="img-thumbnail">
+                    <figcaption>Test Clean Desktop 2</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Now your Desktop has been cleaned up and all the files have been saved into <i>Documents/History_Desktops</i>!</p>
+        <br>
+        <br>
+        <h2>Finally</h2>
+        <hr>
+        <p class="lead">The last example will show up in the next blog. If you are interested in Automator, try it yourself!</p>
+        <p class="lead">There is no requirement to programming experience, but it will save you a lot of time.</p>
+        <p class="lead">Anyway, it's cool right?</p>
+        <br><br>
+
+
+        <hr>
+        <div class="well">
+            <p class="lead">P.S. Wish Automator makes your life better.</p>
+        </div>
+        <p class="lead">(Please use this link to share: <a href="http://zhuxinqi.space/blog/macwithautomator2.html">http://zhuxinqi.space/blog/macwithautomator2.html</a>)</p>
+        <p class="lead">(转载请注明出处)</p>
+      </div>
+
+      <hr>
+
+      <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+      
+      <div class="fb-comments" data-href="https://zhuxinqimac.github.io/blog/macwithautomator2.html" data-width="100%" data-numposts="5"></div>
+      
+
+    </div> <!-- container -->
+    
+    <hr>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; 2016 Steven Zhu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../styles/jQuery/jquery-1.11.3.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../styles/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="../styles/jQuery/jquery-3.1.0.min.js"></script>
+
+    
+    <!-- Custome JS -->
+    <script src="../styles/myStyles.js"></script>
+</body>
+</html>
