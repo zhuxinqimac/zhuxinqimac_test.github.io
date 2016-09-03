@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Steven Zhu's Home Page</title>
+    <meta name="description" content="Steven Zhu's Home Page 1.0">
+    <meta name="keywords" content="Steven, Steven Zhu, Zhu Xinqi, Xinqi Zhu, Xinqi, 朱鑫祺, Novelty Zhu">
+    <meta name="author" content="Steven Zhu">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="../images/angelscoming_logo_icon.png">
+    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/myStyles.css">
+</head>
+
+<body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1662746427385192',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-brand navbar-left">
+            <div> STE <img src="../images/angelscoming_logo.png" alt="logo"> EN </div>
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="../art.html"> Art <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../art_novels.html">Novels</a></li>
+                <li><a href="../art_poems.html">Poems</a></li>
+                <li><a href="../art_paintings.html">Paintings</a></li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="../blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="../photo.html">Photo</a>
+            </li>
+            <li>
+              <a href="../project.html">Project</a>
+            </li>
+            <li>
+              <a href="../contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="macwithautomator3-introduction" class="heading">
+      <div class="container content">
+        <h1>Mac with Automator : Part 3 <small>by Steven Zhu</small></h1>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div id="macwithautomator3-content" class="blog-content">
+        <p class="lead">In this blog I'll use Automator to help you apply a filter to your images.</p>
+        <br>
+
+        <h3 class="subtitle"><span class="glyphicon glyphicon-zoom-in"></span> Add a Filter to Images</h3>
+        <hr>
+        <p class="lead">Some people like to apply filters to images. Such as...</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/beforefilter.jpg" alt="Before" class="img-thumbnail">
+                    <figcaption>Before</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6">
+                <figure>
+                    <img src="../images/afterfilter.jpg" alt="After" class="img-thumbnail">
+                    <figcaption>After</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">However some of these conversions are very simple, and some would be repetitive. It would be very costly for human to do such kind of small jobs so many times. If we can find a robot to do these boring things for us, that would be wonderful.</p>
+        <p class="lead">So today we will use Automator to finish it.</p>
+        <p class="lead">Let's begin.</p>
+        <p class="lead">
+            Open Automator.
+        </p>
+        <p class="lead">Choose File->New. Choose Application(this time we use application as an example).</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/chooseapplication.jpg" alt="Choose Application" class="img-thumbnail">
+                    <figcaption>Choose Application</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">When using <i>Application</i>, the files dragged on it are considered as input.</p>
+        <p class="lead">Search on the Search Bar: <i>filter</i>, and drag <i>Apply Quartz Composition Filter to Image Files</i> to the right area.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/dragfilter.jpg" alt="Drag Apply Quartz Composition Filter to Image Files" class="img-thumbnail">
+                    <figcaption>Drag Apply Quartz Composition Filter to Image Files</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">You will receive a warning prompt, because your action may modify the original file. Just click <i>Add</i>.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/changewarning.jpg" alt="Warning" class="img-thumbnail">
+                    <figcaption>Warning</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Now you will get a <i>Copy File Items</i> action before your transmission action.</p>
+        <p class="lead">Choose <i>Desktop</i> in the Drop-down menu to make sure the modified images are stored on the Desktop.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/storeondesktop.jpg" alt="Store on Desktop" class="img-thumbnail">
+                    <figcaption>Store on Desktop</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Click on the <i>Option</i> button of <i>Apply Quartz Composition Filter to Image Files</i> and check <i>Show this action when the workflow runs</i> to make this window show when you are using this workflow because you may want to choose which type of conversion to be implemented(you may even make the last action show to change the save location).</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/checkoption.jpg" alt="Check Option" class="img-thumbnail">
+                    <figcaption>Check Option</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Save it(I saved it as <i>Apply Filter to Images.app</i>) in <i>Desktop</i> folder.</p>
+        <p class="lead">Now let's have a test.</p>
+        <p class="lead">Drag an image on the app we created.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/dragimage1.jpg" alt="Drag Image on App" class="img-thumbnail">
+                    <figcaption>Drag Image on App</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Choose which type of filter to apply(I chose <i>ASCII Art</i>). You can modify the parameters on the right panel.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/choosekind1.jpg" alt="Choose Kind" class="img-thumbnail">
+                    <figcaption>Choose Kind</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">TA-DA...</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/showimage1.jpg" alt="After" class="img-thumbnail">
+                    <figcaption>After</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">If you want the background to be black, you can add one more <i>Apply Quartz Composition Filter to Image Files</i> action in your application and choose <i>Color Invert</i> when you select the effect. Here I just drag the converted image to the App we created again to do it.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/selectcolorinvert.jpg" alt="Select Color Invert" class="img-thumbnail">
+                    <figcaption>Select Color Invert</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">TA-DA...</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/afterinvert.jpg" alt="After Invert" class="img-thumbnail">
+                    <figcaption>After Invert</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">You can drag multiple images to the App as well.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/dragimage2.jpg" alt="Drag Multiple Images" class="img-thumbnail">
+                    <figcaption>Drag Multiple Images</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">And I chose <i>X-Ray</i>...</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/showimage2.jpg" alt="X-Ray" class="img-thumbnail">
+                    <figcaption>X-Ray</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">If you want to know more, just try it yourself! It supports about 30 kinds of conversion. However, this is not a professional level of image modification. If you need more accurate and precise modification, please use more professional softwares.</p>
+        <br>
+        <br>
+        <h2>Finally</h2>
+        <hr>
+        <p class="lead">If you are interested in Automator, try it yourself!</p>
+        <p class="lead">There is no requirement to programming experience, but it will save you a lot of time.</p>
+        <p class="lead">Anyway, it's cool right?</p>
+        <br><br>
+
+
+        <hr>
+        <div class="well">
+            <p class="lead">P.S. Wish Automator makes your life better.</p>
+        </div>
+        <p class="lead">(Please use this link to share: <a href="http://zhuxinqi.space/blog/macwithautomator3.html">http://zhuxinqi.space/blog/macwithautomator3.html</a>)</p>
+        <p class="lead">(转载请注明出处)</p>
+      </div>
+
+      <hr>
+
+      <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+      
+      <div class="fb-comments" data-href="https://zhuxinqimac.github.io/blog/macwithautomator3.html" data-width="100%" data-numposts="5"></div>
+      
+
+    </div> <!-- container -->
+    
+    <hr>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; 2016 Steven Zhu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../styles/jQuery/jquery-1.11.3.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../styles/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="../styles/jQuery/jquery-3.1.0.min.js"></script>
+
+    
+    <!-- Custome JS -->
+    <script src="../styles/myStyles.js"></script>
+</body>
+</html>
