@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Steven Zhu's Home Page</title>
+    <meta name="description" content="Steven Zhu's Home Page 1.0">
+    <meta name="keywords" content="Steven, Steven Zhu, Zhu Xinqi, Xinqi Zhu, Xinqi, 朱鑫祺, Novelty Zhu">
+    <meta name="author" content="Steven Zhu">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="../images/angelscoming_logo_icon.png">
+    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/myStyles.css">
+</head>
+
+<body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1662746427385192',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-brand navbar-left">
+            <div> STE <img src="../images/angelscoming_logo.png" alt="logo"> EN </div>
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="../art.html"> Art <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../art_novels.html">Novels</a></li>
+                <li><a href="../art_poems.html">Poems</a></li>
+                <li><a href="../art_paintings.html">Paintings</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="../photo.html">Photo</a>
+            </li>
+            <li class="active">
+              <a href="../project.html">Project</a>
+            </li>
+            <li>
+              <a href="../contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="electcourses-introduction" class="heading">
+      <div class="container content">
+        <h1>选课小程序 <small>by Steven Zhu</small></h1>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <div class="container">
+      <div id="electcourses-content" class="project-content">
+        <p class="lead">
+            交大选课系统的辅助选课小程序。
+        </p>
+        <p class="lead">
+            解放你的双手，同时拒绝好课从指尖溜走。
+        </p>
+        <p class="lead">
+            无需环境配置，即点即用。
+        </p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/electcourses1.jpg" alt="Automator in Launchpad" class="img-thumbnail">
+                    <figcaption>初始界面</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <br><br>
+        <hr>
+        <h3>原理</h3>
+        <p class="lead">
+            非常非常简单。这是一个python脚本，python版本为3.4.3，运用selenium库在浏览器上模拟人的手动点击，更精准，更迅速。
+        </p>
+        <p class="lead">
+            这个selenium，简单来讲就是能够定位一个网页上面的元素，然后选中并实施一系列操作，例如点击、拖拽、输入键盘等等。是一个将网页操作自动化的优秀工具。
+        </p>
+        <div class="well">
+          <p class="lead">
+              关于selenium，请自行前往 <a href="http://selenium-python.readthedocs.io/" target="_blank">http://selenium-python.readthedocs.io/</a> 了解更多。
+          </p>
+          <p class="lead">
+              在关注selenium之前，我从海哥（博客：<a href="https://zhengwu-blog.github.io/" target="_blank">https://zhengwu-blog.github.io/</a>）那里了解到了splinter，一个和selenium功能相似的工具。有兴趣的朋友也可以关注一下： <a href="https://splinter.readthedocs.io/en/latest/" target="_blank">https://splinter.readthedocs.io/en/latest/</a>。而我选用selenium是觉得它的功能更丰富一些。
+          </p>
+        </div>
+        <p class="lead">在完成代码之后，我使用了pyinstaller工具来将python源码进行封装，转换成可执行文件，可以直接点击运行，而无需搭建python环境。当然，如果你想通过解释器运行，我也在下载文件中提供了源代码。</p>
+
+        <br><br>
+        <hr>
+        <h3>注意事项</h3>
+        <p class="lead">
+            运行前请先仔细阅读下载文件中的README.txt。
+        </p>
+        <p class="lead">
+            本小程序支持Mac和Windows平台。
+        </p>
+        <p class="lead">然而，此程序并没有进行过大量测试，所以你可以认为这个版本为beta版。如果有问题，请email我：<a href="mailto:zhuxinqimac@yahoo.com?Subject=ElectCourses Problem" target="_top">zhuxinqimac@yahoo.com</a>  但请谅解我不一定会回复或能够解决你的问题。</p>
+        <div class="well">
+          <p class="lead">
+              如果你使用Linux，我相信你可以使用python3解释器直接运行源代码，记得在运行前用pip3安装selenium库。
+          </p>
+        </div>
+        <p class="lead">本程序只能帮助你选择必修课、通识课、任选课。由于只在第三轮选课中测试过，所以海选和抢选还有待测试。如果你有任何测试结果，请email我，让此程序改进得更好。</p>
+        <p class="lead">请明确，本程序为自愿下载使用。使用本软件招致的任何后果，作者不负任何责任。</p>
+
+        <br><br>
+        <hr>
+        <h3>下载</h3>
+        <a href="../resources/electcourses_mac.zip" target="_blank" class="btn btn-danger btn-lg electcourses-download">Mac版</a>
+        <a href="../resources/electcourses_mac.zip" target="_blank" class="btn btn-primary btn-lg electcourses-download">Win版</a>
+      </div>
+
+      <hr>
+
+      <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+      
+      <div class="fb-comments" data-href="https://zhuxinqimac.github.io/project/firmwareupdate.html" data-width="100%" data-numposts="5"></div>
+    </div> <!-- container -->
+
+    <hr>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; 2016 Steven Zhu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../styles/jQuery/jquery-1.11.3.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../styles/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="../styles/jQuery/jquery-3.1.0.min.js"></script>
+
+    
+    <!-- Custome JS -->
+    <script src="../styles/myStyles.js"></script>
+</body>
+</html>

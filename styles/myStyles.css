@@ -285,6 +285,24 @@ p.centerPoint {
     margin: 0 10%;
 }
 
+.electcourses-download {
+    margin: 10pt;
+}
+
+.project-content figcaption {
+    text-align: center;
+    font-style: italic;
+    margin: 10px;
+}
+
+.project-content figure {
+    text-align: center;
+}
+
+.project-content .subtitle {
+    color: grey;
+}
+
 /*================= ****** =================*/
 /*================= End Project Page =================*/
 /*================= ****** =================*/
