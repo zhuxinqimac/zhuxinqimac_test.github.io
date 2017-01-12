@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Steven Zhu's Home Page</title>
+    <meta name="description" content="Steven Zhu's Home Page 1.0">
+    <meta name="keywords" content="Steven, Steven Zhu, Zhu Xinqi, Xinqi Zhu, Xinqi, 朱鑫祺, Novelty Zhu">
+    <meta name="author" content="Steven Zhu">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="../images/angelscoming_logo_icon.png">
+    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/myStyles.css">
+</head>
+
+<body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1662746427385192',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-brand navbar-left">
+            <div> STE <img src="../images/angelscoming_logo.png" alt="logo"> EN </div>
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="../art.html"> Art <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../art_novels.html">Novels</a></li>
+                <li><a href="../art_poems.html">Poems</a></li>
+                <li><a href="../art_paintings.html">Paintings</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="../photo.html">Photo</a>
+            </li>
+            <li class="active">
+              <a href="../project.html">Project</a>
+            </li>
+            <li>
+              <a href="../contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="electcourses-introduction" class="heading">
+      <div class="container content">
+        <h1>Web App for Matting <small>by Steven Zhu</small></h1>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <div class="container">
+      <div id="electcourses-content" class="project-content">
+        <p class="lead">
+            This is a small project for my software engineering course. This project is completed by Liao Yiming and me.
+        </p>
+        <p class="lead">
+            In this web app, you can upload a portrait photo and get a matting result by drawing a Trimap on the page.
+        </p>
+        <p class="lead">
+            Note that this is just a course site and you can not use it for any commercial purpose. Just try it for fun.
+        </p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/webappformattingUI.png" alt="Web App for Matting UI" class="img-thumbnail">
+                    <figcaption>Web App for Matting UI</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <h3>Purpose</h3>
+        <p class="lead">
+            The purpose of this small project is that we want to provide a simple and light app for people to get a matting result of their protrait. People do not need to download and install any software just in order to get a matting of their photo.
+        </p>
+
+        <hr>
+        <h3>Algorithm</h3>
+        <p class="lead">
+            We used the algorithm of KNN Matting (<a href="http://dingzeyu.li/projects/knn/" target="_blank">Project Site</a>) to implement our project.
+        </p>
+        <hr>
+        <h3>How to use</h3>
+        <p class="lead">
+            You just need to use the link below to head to the project site and follow these steps:
+            <div class="well">
+              <p class="lead">
+                  1. Upload a portrait and click (your photo should not beyond resolution of 320*320 or size of 2M).
+              </p>
+              <p class="lead">
+                  2. Draw a Trimap in the middle Trimap section and click Convert.
+              </p>
+              <p class="lead">
+                  3. Wait for several seconds and see the result.
+              </p>
+              <p class="lead">
+                  4. If the result does not show correctly, please clear your browsing data and refresh the page.
+              </p>
+          </div>
+        </p>
+
+        <hr>
+        <h3>Project Site</h3>
+        <a href="http://202.120.38.35/Group24" target="_blank" class="btn btn-danger btn-lg electcourses-download">Web App for Matting</a>
+      </div>
+
+      <hr>
+
+      <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+      
+      <div class="fb-comments" data-href="https://zhuxinqimac.github.io/project/webappformatting.html" data-width="100%" data-numposts="5"></div>
+    </div> <!-- container -->
+
+    <hr>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; 2016 Steven Zhu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../styles/jQuery/jquery-1.11.3.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../styles/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="../styles/jQuery/jquery-3.1.0.min.js"></script>
+
+    
+    <!-- Custome JS -->
+    <script src="../styles/myStyles.js"></script>
+</body>
+</html>
