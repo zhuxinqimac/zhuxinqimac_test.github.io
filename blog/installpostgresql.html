@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Steven Zhu's Home Page</title>
+    <meta name="description" content="Steven Zhu's Home Page 1.0">
+    <meta name="keywords" content="Steven, Steven Zhu, Zhu Xinqi, Xinqi Zhu, Xinqi, 朱鑫祺, Novelty Zhu">
+    <meta name="author" content="Steven Zhu">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="../images/angelscoming_logo_icon.png">
+    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/myStyles.css">
+</head>
+
+<body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1662746427385192',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-brand navbar-left">
+            <div> STE <img src="../images/angelscoming_logo.png" alt="logo"> EN </div>
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="../art.html"> Art <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../art_novels.html">Novels</a></li>
+                <li><a href="../art_poems.html">Poems</a></li>
+                <li><a href="../art_paintings.html">Paintings</a></li>
+              </ul>
+            </li>
+            <li class="active">
+              <a href="../blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="../photo.html">Photo</a>
+            </li>
+            <li>
+              <a href="../project.html">Project</a>
+            </li>
+            <li>
+              <a href="../contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="kexueshangwang-introduction" class="heading">
+      <div class="container content">
+        <h1>How to Install PostgreSQL <small>by Steven Zhu</small></h1>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div id="kexueshangwang-content" class="blog-content">
+        <p class="lead">This is a blog for my own convenience to install PostgreSQL in case I forget it. This guidance is basically the same as the one provided by the course of Database System at UNSW.
+        </p>
+        
+        <br><br>
+        <h3>Add Environment (Optional)</h3>
+        <hr>
+        <p class="lead">Create an environmental file "env" and copy these lines in it:</p>
+        <div class="well">
+            <p class="lead">PGHOME=/where/you/want/to/put/psql</p>
+            <p class="lead">export PGDATA=$PGHOME/data</p>
+            <p class="lead">export PGHOST=$PGDATA</p>
+            <p class="lead">export PGPORT=54321</p>
+            <p class="lead">export LD_LIBRARY_PATH=$PGHOME/lib</p>
+            <p class="lead">export PATH=$PGHOME/bin:$PATH</p>
+        </div>
+        <p class="lead">Then append this line to ~/.bash_profile :</p>
+        <div class="well">
+            <p class="lead">source /where/you/put/env</p>
+        </div>
+        <p class="lead">Then source your bash_profile.</p>
+
+        <br><br>
+        <h3>Naive Installation</h3>
+        <hr>
+        <p class="lead">Linux: apt-get install postgresql</p>
+        <p class="lead">macOS: brew install postgresql</p>
+
+        <br><br>
+        <h3>Initiate Database</h3>
+        <hr>
+        <p class="lead">You can initdb now, just type:</p>
+        <div class="well">
+            <p class="lead">$ initdb</p>
+        </div>
+        <p class="lead">Then edit $PGDATA/postgresql.conf file.</p>
+        <div class="well">
+            <p class="lead">unix_socket_directories = '/where/you/put/pgsql/data'</p>
+        </div>
+        <p class="lead">Then you can start your PostgreSQL server with:</p>
+        <div class="well">
+            <p class="lead">$ pg_ctl start -l $PGDATA/log</p>
+        </div>
+        <p class="lead">And you can stop it by typing:</p>
+        <div class="well">
+            <p class="lead">$ pg_ctl stop</p>
+        </div>
+
+        <br><br>
+        <h3>Manual Installation</h3>
+        <hr>
+        <p class="lead">Download the PostgreSQL source code from official website.</p>
+        <p class="lead">Extract it:</p>
+        <div class="well">
+            <p class="lead">$ tar xfj postgresql-9.3.3.tar.bz2</p>
+        </div>
+        <p class="lead">You will get a directory of the same name.</p>
+        <p class="lead">Compile it:</p>
+        <div class="well">
+            <p class="lead">$ cd postgresql-9.3.3</p>
+            <p class="lead">$ ./configure --prefix=/where/you/want/to/put/pgsql</p>
+            <p class="lead">$ make</p>
+        </div>
+        <p class="lead">Then you get: All of PostgreSQL successfully made. Ready to install.</p>
+        <p class="lead">Then install it.</p>
+        <div class="well">
+            <p class="lead">$ make install</p>
+        </div>
+        <p class="lead">Then you get: PostgreSQL installation complete.</p>
+        <p class="lead">Then set the environment as above.</p>
+        <p class="lead">Then initdb as above.</p>
+      </div>
+
+      <hr>
+
+      <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+      
+      <div class="fb-comments" data-href="https://zhuxinqimac.github.io/blog/installpostgresql.html" data-width="100%" data-numposts="5"></div>
+      
+
+    </div> <!-- container -->
+    
+    <hr>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; 2017 Steven Zhu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../styles/jQuery/jquery-1.11.3.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../styles/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="../styles/jQuery/jquery-3.1.0.min.js"></script>
+
+    
+    <!-- Custome JS -->
+    <script src="../styles/myStyles.js"></script>
+</body>
+</html>
