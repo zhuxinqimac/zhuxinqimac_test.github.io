@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Steven Zhu's Home Page</title>
+    <meta name="description" content="A messaging application using java. The application include message forwarding, private messaging, blacklisk, authentication and more functionalities.">
+    <meta name="keywords" content="Messaging application, java, TCP, Steven, Steven Zhu, Zhu Xinqi, Xinqi Zhu, Xinqi, 朱鑫祺, Novelty Zhu">
+    <meta name="author" content="Steven Zhu">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+
+    <link rel="icon" type="image/png" href="../images/angelscoming_logo_icon.png">
+    <link rel="stylesheet" href="../styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/myStyles.css">
+</head>
+
+<body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1662746427385192',
+          xfbml      : true,
+          version    : 'v2.7'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../index.html" class="navbar-brand navbar-left">
+            <div> STE <img src="../images/angelscoming_logo.png" alt="logo"> EN </div>
+          </a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="../art.html"> Art <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="../art_novels.html">Novels</a></li>
+                <li><a href="../art_poems.html">Poems</a></li>
+                <li><a href="../art_paintings.html">Paintings</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="../photo.html">Photo</a>
+            </li>
+            <li class="active">
+              <a href="../project.html">Project</a>
+            </li>
+            <li>
+              <a href="../contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="../about.html">About</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div id="messagingapplication-introduction" class="heading">
+      <div class="container content">
+        <h1>My Messaging Application <small>by Steven Zhu</small></h1>
+      </div>
+    </div>
+
+
+    <hr>
+
+    <div class="container">
+      <div id="messagingapplication-content" class="project-content">
+        <!-- <br><br> -->
+        <hr>
+        <h3 style="color: red">Update</h3>
+        <p class="lead">01/05/2017: Added "-->" prefix to every system prompt in order to distinguish user inputs and system messages.</p>
+
+
+        <br><br>
+        <hr>
+        <h3>Introduction</h3>
+        <p class="lead">
+            This is an assignment of the course of Computer Networks & Application at the University of New South Wales.
+        </p>
+        <p class="lead">
+            This is a start-from-scratch project and all works are done by Steven ZHU (myself). All rights reserved.
+        </p>
+        <p class="lead">
+            This project is implemented in Java language. Java should be installed if you want to run this application. Tested under Java 1.8, on macOS 10.12.4 and Debian.
+        </p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingServer.png" alt="Messaging UI" width="60%" class="img-thumbnail" >
+                    <figcaption>Server UI</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingClient.png" alt="Messaging UI" width="60%" class="img-thumbnail" >
+                    <figcaption>Client UI</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingSystemDesign.png" alt="System Design" width="60%" class="img-thumbnail" >
+                    <center>
+                    <figcaption style="width: 60%">System Design: Red arrow means generating threads. Dash ar- row means communication using synchronization. Black arrow means Blocking Queue communication. Blue arrow means TCP communication. Black circles mean threads. Dash circles mean the class used to communicate.</figcaption>
+                    </center>
+                </figure>
+            </div>
+        </div>
+
+        <br><br>
+        <hr>
+        <h3>Run</h3>
+        <p class="lead">Before you run any thing, you need to compile these java codes first.</p>
+        <p class="lead">
+        If you want to run server program on your machine, navigate to Server folder. If you want to use Client to chat, navigate to Client folder. Then type the following command in either folder. You can also do both on a single machine:
+        </p>
+
+        <div class="well well-sm">
+          <xmp>$ javac *.java</xmp>
+        </div>
+
+        <p class="lead">
+            If you want to run server:
+        </p>
+
+        <div class="well well-sm">
+              <xmp> $ java Server server_port block_duration timeout </xmp>
+              <p>i.e.</p>
+              <xmp> $ java Server 8991 60 180 </xmp>
+        </div>
+        <p class="lead">
+            server_port: the port used on your server.
+            <br>
+            block_duration: the block duration when someone login failed over 3 times (in seconds).
+            <br>
+            timeout: the time to force logout a client when no command received from this client (in seconds).
+        </p>
+        <p class="lead">Then you are all set on your server side!</p>
+        
+
+        <p class="lead">
+            If you want to run client:
+        </p>
+        <div class="well well-sm">
+              <xmp> $ java Client server_IP server_port </xmp>
+              <p>i.e.</p>
+              <xmp> $ java Client 127.0.0.1 8991 </xmp>
+        </div>
+
+        <p class="lead">
+            server_IP: the IP address of your server machine, 127.0.0.1 is localhost.
+            <br>
+            server_port: the port used by the server.
+        </p>
+        <p class="lead">If the IP address and port are set properly, you will be sent a welcome message and start to type in your username.</p>
+
+        <br><br>
+        <hr>
+        <h3>Login</h3>
+        <p class="lead">There is not register system and all user informations are not stored in a database system. They are just stored in a file called credentials.txt on the server side. You can migrate them into database and add your own version of register system if you like.</p>
+        <p class="lead">An example of credential.txt is shown below. You can remove any or add your own usernames and passwords in it.</p>
+        <div class="well">
+          <xmp>hans falcon
+yoda wise
+vader sithlord
+r2d2 socute
+c3p0 droid</xmp>
+        </div>
+        <p class="lead">First column is the username and second is password.</p>
+        <p class="lead">Then you can login with these pairs.</p>
+        <p class="lead">If you logged in successfully:</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingLogin1.png" alt="Successful Login" width="60%" class="img-thumbnail" >
+                    <figcaption>Successful Login</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">If you failed three times:</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingLogin2.png" alt="Failed Login" width="60%" class="img-thumbnail" >
+                    <figcaption>Failed Login</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Then you cannot log in with this account until block duration up.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingLogin3.png" alt="Blocked Login" width="60%" class="img-thumbnail" >
+                    <figcaption>Blocked Login</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Your login will be automatically broadcast to all the online users, but will not broadcast to the ones you added to blacklist (the ones blocked by you).</p>
+        <br><br>
+        <hr>
+        <h3>Messaging</h3>
+        <p class="lead">
+            You can type in terminal to send someone a message.
+        </p>
+        <div class="well well-sm">
+          <xmp>$ message username message_content</xmp>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingMessage.png" alt="Normal Message" width="90%" class="img-thumbnail" >
+                    <figcaption>Normal Message</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">Or you can broadcast to everyone a message.</p>
+        <div class="well well-sm">
+          <xmp>$ broadcast message_content</xmp>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingBroadcast.png" alt="Broadcast" width="90%" class="img-thumbnail" >
+                    <figcaption>Broadcast Message</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">You can even send someone an offline message. Once the user logged in, he will receive the offline messages. But note that the broadcast messages will not be treated as offline messages.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingOffline.png" alt="Offline Message" width="90%" class="img-thumbnail" >
+                    <figcaption>Offline Message</figcaption>
+                </figure>
+            </div>
+        </div>
+        
+
+        <br><br>
+        <hr>
+        <h3>Online & Online History</h3>
+        <p class="lead">You can check who else are online now by typing:</p>
+        <div class="well well-sm">
+          <xmp>$ whoelse</xmp>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingWhoelse.png" alt="Check Whoelse" width="60%" class="img-thumbnail" >
+                    <figcaption>Check Whoelse</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p class="lead">You can even check online history, i.e. you may want to know who are online in last 5 minutes.</p>
+        <div class="well well-sm">
+          <xmp>$ whoelsesince time (in seconds)</xmp>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingWhoelsesince.png" alt="Check Whoelsesince" width="60%" class="img-thumbnail" >
+                    <figcaption>Check Whoelsesince</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <br><br>
+        <hr>
+        <h3>Blacklist</h3>
+        <p class="lead">If you find someone annoying, you can block him by typing:</p>
+        <div class="well well-sm">
+          <xmp>$ block username</xmp>
+        </div>
+        <p class="lead">When you block a person, he cannot send you any message, even broadcast. He cannot establish private message with you as well and your login and logout information will not be presented to him.</p>
+        <p class="lead">You can also unblock anybody at anytime.</p>
+        <div class="well well-sm">
+          <xmp>$ unblock username</xmp>
+        </div>
+
+        <br><br>
+        <hr>
+        <h3>Private Messaging</h3>
+        <p class="lead">You can establish a connection to someone directly and send him message without touching the server. This is a way to send private messages and protect your privacy. The sever will not know anything about your message content.</p>
+        <p class="lead">In order to use it, you need first to start a private message dialogue.</p>
+        <div class="well well-sm">
+          <xmp>$ startprivate someone</xmp>
+        </div>
+        <p class="lead">The client will ask the server for the requested user's IP address and establish a TCP connection directly to this user.</p>
+        <p class="lead">Then you can send private message to this user by typing:</p>
+        <div class="well well-sm">
+          <xmp>$ private someone message_content</xmp>
+        </div>
+        <p class="lead">When you want to stop private messaging, just type:</p>
+        <div class="well well-sm">
+          <xmp>$ stopprivate someone</xmp>
+        </div>
+        <p class="lead">The following is a private message transaction.</p>
+        <div class="row">
+            <div class="col-sm-12">
+                <figure>
+                    <img src="../images/messagingPrivate.png" alt="Send Private Message" width="90%" class="img-thumbnail" >
+                    <figcaption>Send Private Message</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <br><br>
+        <hr>
+        <h3>Logout</h3>
+        <p class="lead">Please use logout to logout the system!!!</p>
+        <div class="well well-sm">
+          <xmp>$ logout</xmp>
+        </div>
+        <p class="lead">If you do not use logout but use force stop command such as Control+C, your status will remain online forever! You should restart the server to solve this problem. (I may fix this bug later, but this is still a bug now!)</p>
+        <p class="lead">Your logout will be broadcast to every online users not in your blacklist (people not blocked by you).</p>
+
+        <br><br>
+        <hr>
+        <h3>Future Work</h3>
+        <p class="lead">
+            Fix all the bugs found and improve the code.
+        </p>
+        <p class="lead">
+            Change the code to a more object oriented way for better maintenance.
+        </p>
+        <p class="lead">
+            Add register system.
+        </p>
+        <p class="lead">
+            Add GUI.
+        </p>
+        <div class="well">
+          <p class="lead">
+              Note: I may be too lazy do to any of these works.
+          </p>
+        </div>
+
+        <br><br>
+        <hr>
+        <h3>Final</h3>
+        <div class="well">
+          <p class="lead">
+            May this project help you in some way.
+          </p>
+          <p class="lead">
+            May this project help me in some way.
+          </p>
+        </div>
+
+        <br><br>
+        <hr>
+        <h3>Download</h3>
+        <p class="lead">GitHub: <a href="https://github.com/zhuxinqimac/MyMessagingApp" target="_blank">https://github.com/zhuxinqimac/MyMessagingApp</a></p>
+      </div>
+
+      <hr>
+
+      <div
+        class="fb-like"
+        data-share="true"
+        data-width="450"
+        data-show-faces="true">
+      </div>
+      
+      <div class="fb-comments" data-href="https://zhuxinqimac.github.io/project/messagingapplication.html" data-width="100%" data-numposts="5"></div>
+    </div> <!-- container -->
+
+    <hr>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="copyright">Copyright &copy; 2017 Steven Zhu</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../styles/jQuery/jquery-1.11.3.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../styles/bootstrap/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="../styles/jQuery/jquery-3.1.0.min.js"></script>
+
+    
+    <!-- Custome JS -->
+    <script src="../styles/myStyles.js"></script>
+</body>
+</html>
